@@ -5,6 +5,7 @@ import { DraggableCube } from './components/Cube';
 import { Background } from './components/Background';
 import EmailForm from './components/EmailForm';
 import Products from './components/Products';
+import { SpeedInsights } from '@vercel/speed-insights/react'; // Import SpeedInsights
 import './App.css';
 
 function App() {
@@ -28,10 +29,13 @@ function App() {
         </div>
       </section>
       
-      {/* Scrollable Content Section with Product Features */}
+      {/* Scrollable Content Section with Products */}
       <section className="content-section">
         <Products />
       </section>
+
+      {/* Vercel Speed Insights Component */}
+      <SpeedInsights dsn="Q3R2eN2pld1oTQdqQKMGLbjMtB8" />
     </div>
   );
 }
